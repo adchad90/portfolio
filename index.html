@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(29, 10, 62);
+        color: beige;
+      }
+      nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        background-color: rgb(10, 3, 18);
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li{
+        list-style: none;
+        margin: 0 25px;
+        font-size: 1.5rem;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: beige;
+      }
+      nav ul li a:hover{
+        color: blueviolet;
+        font-size: 1.6rem;
+      }
+      .left{
+        font-size: 2.5rem;
+      }
+      .first{
+        display: flex;
+        justify-content: space-around;
+        margin: 60px 0;
+        font-size: 3rem;
+      }
+      .first > div{
+        width: 30%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .hilgt a{
+        color: rgb(230, 223, 13);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+      }
+      .secondSection{
+        text-align: left;
+        font-size: xx-large;
+        max-width: 80vw;
+        margin-top:30px;
+        margin-bottom: 30px;
+        margin-left: 90px;
+      }
+      .edSec{
+        margin-left: 90px ;
+        margin-right: 90px;
+        margin-bottom: 45px;;
+      }
+      .skills{
+        font-size: xx-large;
+        margin-top: 30px;
+        margin-left: 90px;
+        margin-bottom: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Aditya Chavan</div>
+        <div class="right">
+            <ul>
+                <li><a href>About</a></li>
+                <li><a href>Education</a></li>
+                <li><a href>Skills</a></li>
+                <li><a href>Contact Me</a></li>
+                <li><a href>Home</a>
+            </ul>
+        </div>
+
+      </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftSection">
+                <div>Hi, I am <spam class="hilgt"><a href="https://www.linkedin.com/in/aditya-chavan-7927a8289/">Aditya</a></spam> 
+                <div>this is my resume.<br/> I am interested in<br/><spam class="autoType"></spam></div></div>
+            </div>
+            <div class="rightSection">
+                <img src="i2.png" width="60%">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>My Education</h1>
+        </section>
+        <section class="edSec">
+           <a href="https://www.podareducation.org/"><img src="pis1.jpg"></a>
+           <a href="https://pjogseniorcollege.in/"><img src="jog2.png"></a>
+           <a href="https://vjti.ac.in/"><img src="vj1.jpg"> </a>
+        </section>
+        <hr>
+        <section class="skills">
+            <h1>My Skills</h1>
+            <a href="https://isocpp.org/"><img src="cpp.jpg"></a>
+            <a href="https://www.python.org/"><img src="py.jpg"></a>
+            <a href="https://www.w3schools.com/html/"><img src="ht.png"></a>
+            <a href="https://www.w3schools.com/css/default.asp"><img src="css.png"></a>
+            <a href="https://www.w3schools.com/js/"><img src="js.png"></a>
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('.autoType', {
+      strings: ['AI', 'Machine Learning', 'Web Development', 'App Development' ],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
+  </body>
+</html>
